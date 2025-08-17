@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Pollution Incident</title>
+  <link rel="stylesheet" href="file_report.css">
+ 
+</head>
+<body>
+  <div class="container">
+    <h2>Report a Pollution Incident</h2>
+    <p class="subtitle">Help us protect the environment by reporting pollution incidents in your area</p>
+
+    <!-- Steps -->
+    <div class="steps">
+      <div class="step active" onclick="showStep(1)">
+        <div class="circle">1</div>
+        <span>Upload Evidence</span>
+      </div>
+      <div class="step" onclick="showStep(2)">
+        <div class="circle">2</div>
+        <span>Add Details</span>
+      </div>
+      <div class="step" onclick="showStep(3)">
+        <div class="circle">3</div>
+        <span>Confirm Location</span>
+      </div>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="section active" id="step1">
+      <div class="upload-box">
+        <div class="upload-icons">
+          <div>📷<br>Photo</div>
+          <div>🎥<br>Video</div>
+          <div>🎤<br>Audio</div>
+        </div>
+        <p>Drag and drop files here, or click to select</p>
+        <button class="choose-btn">Choose Files</button>
+      </div>
+      <div class="tips">
+        <strong>Tips for better evidence:</strong>
+        <ul>
+          <li>Include wide shots and close-ups</li>
+          <li>Capture date/time if possible</li>
+          <li>Show the source of pollution clearly</li>
+        </ul>
+      </div>
+      <button class="next-btn" onclick="nextStep()">Next →</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="section" id="step2">
+      <h3>Add Details</h3>
+      <input type="text" placeholder="Type of Pollution (Air, Water, Noise...)" />
+      <textarea rows="4" placeholder="Describe the incident..."></textarea>
+      <button class="next-btn" onclick="nextStep()">Next →</button>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="section" id="step3">
+      <h3>Confirm Location</h3>
+      <input type="text" placeholder="Enter location or pin code" />
+      <button class="next-btn" onclick="alert('Incident Reported Successfully!')">Submit ✔</button>
+    </div>
+  </div>
+
+  <script>
+    let currentStep = 1;
+
+    function showStep(step) {
+      currentStep = step;
+      updateSteps();
+    }
+
+    function nextStep() {
+      if (currentStep < 3) {
+        currentStep++;
+        updateSteps();
+      }
+    }
+
+    function updateSteps() {
+      document.querySelectorAll(".section").forEach((sec, i) => {
+        sec.classList.toggle("active", i === currentStep - 1);
+      });
+
+      document.querySelectorAll(".step").forEach((step, i) => {
+        step.classList.toggle("active", i === currentStep - 1);
+      });
+    }
+  </script>
+</body>
+</html>
