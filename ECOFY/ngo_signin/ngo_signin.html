@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <title>Ecofy</title>
+    <link rel="stylesheet" href="ngo_signin.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>NGO Login Page</h2>
+        <p class="subtitle">This page is for NGO's that already have an account</p>
+
+        <form>
+
+            <label for="email">Email/NGO ID</label>
+            <div class="input-group">
+                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <label for="password">Password</label>
+            <div class="input-group">
+                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" id="password" placeholder="Enetr your password" required>
+                <span class="icon"><i class="fa-solid fa-eye"></i></span>
+                <span class="eye-icon"></span>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="agree" required>
+                <label for="agree">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit">
+                <span class="users-icon"></span>
+                Sign in
+            </button>
+        </form>
+
+        <p class="signin">Don't have an account?<a href="/ECOFY/ngo_signup/ngo_index.html">Sign up</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOFY</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href=""><img src="new logo.png"></a>
+    
+        <div class="nav-links" id="nav_links">
+            <div class="icons"><i class="fa-solid fa-xmark" onclick="hidemenu()"></i></div>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="ind_signin/ind_signin.html"><i class="fa-solid fa-circle-user"></i>Sign in</a></li>
+                <li><a href="ngo_signin/ngo_signin.html"><i class="fa-solid fa-building-ngo"></i>Sign in</a></li>
+            </ul>
+        </div>
+        <div class="icons" id="nav_links"><i class="fa-solid fa-bars" onclick="showmenu()"></i></div>
+        </nav>
+
+        <div class="text-box">
+            <h1>Report Pollution.<br>
+            Protect Our Future.</h1>
+            <div class="number">256 Reports this month</div>
+            <p>every report brings us closer to a cleaner tomorrow</p>
+         
+            <form action="/report-frntend/file_report/file_report.html" method="GET" style="display: inline;">
+                <button type="submit" class="g-btn">
+                  <i class="fa-solid fa-camera"></i>Report Now
+                </button>
+              </form>
+              
+              <form action="/report-frntend/report_view/report_view.html" method="GET" style="display: inline;">
+                <button type="submit" class="w-btn">
+                  <i class="fa-solid fa-map"></i>View Reports
+                </button>
+              </form>
+        </div>
+    </section>
+
+
+    <section class="problem">
+
+     <h2>The Problem We Face</h2>
+     <div class="subtitle">Environmental pollution is a global crisis affecting billions,<br> <span class="bold">BUT</span> with community action,WE CAN MAKE A DIFFERENCE</div>
+
+     <div class="stats-grid">
+        <div class="stat-card">
+            <div class="redlogo"><i class="fa-solid fa-wind"></i></div>
+            <h3 class="red">91%</h3>
+            <p>of global population breathes polluted air</p>
+        </div>
+        <div class="stat-card">
+            <div class="bluelogo"><i class="fas fa-tint blue"></i></div>
+            <h3 class="blue">2B</h3>
+            <p>people lack access to clean water</p>
+        </div>
+        <div class="stat-card">
+            <div class="dgreenlogo"><i class="fa-solid fa-industry"></i></div>
+            <h3 class="dark-green">300M</h3>
+            <p>tons of toxic waste generated yearly</p>
+        </div>
+        <div class="stat-card">
+            <div class="lgreenlogo"><i class="fa-solid fa-tree"></i></div>
+            <h3 class="green">18.7M</h3>
+            <p>acres of forest lost annually</p>
+        </div>
+        
+    </section>
+
+
+     <section class="stories">
+        <h2>Real Stories,Real Impact</h2>
+        <div class="stories-grid">
+            <div class="story-card">
+                <div class="story-img">
+                    <img src="air pollution.webp"alt="Air Pollution">
+                </div> 
+        
+                <div class="story-content">
+                    <h3>Delhi Air Crisis:A Mother's Fight</h3>
+                    <p>Priya's 8-year-old son developed asthma after moving to Delhi. Her reports led to the shutdown of 3 illegal factories in her neighborhood.</p></div>
+          
+            </div>
+            <div class="story-card">
+                <div class="story-img">
+                    <img src="news2.jpeg"alt="">
+                </div>
+        
+                <div class="story-content">
+                    <h3>Fire at Perungudi dump,chokes residents</h3>
+                    <p>Chennai:A fire broke out at the Perungudi dumpyard on Sunday afternoon, sending thick, toxic smoke across the locality.</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="steps">
+        <h3>How ECOFY Works</h3>
+        <h2>
+            Our platform streamlines pollution reporting from detection to action,<br>
+            ensuring every incident gets the attention it deserves.
+        </h2>
+  <div class="steps-container">
+
+
+    <div class="step">
+        <div class="icon green">
+            <i class="fa-regular         fa-camera"></i></div>
+         <h3>Capture</h3>
+            <p>Take photo/video of pollution incident</p>
+        </div>
+
+
+    <div class="step">
+        <div class="icon blue"><i class="fa-solid fa-user-check"></i></div>
+            <h3>Review</h3>
+            <p>Community and expert moderator validation</p>
+        </div>
+
+
+    <div class="step">
+        <div class="icon green"> <i class="fa-solid fa-user-check"></i></div>
+            <h3>Action</h3>
+            <p>NGO alert and media coverage trigger cleanup</p>
+        </div>
+
+
+    <div class="step">
+        <div class="icon blue"><i class="fa-solid fa-gift"></i></div>
+            <h3>Reward</h3>
+             <p>Earn rewards for each real report</p>
+        </div>
+  </div>
+   
+    
+    <div class="response-box">
+            <p>Average Response Time</p>
+
+            <div class="number">72 hours</div>
+            <h5>from report to action</h5>
+    </div>        
+    </section>
+    
+     <section class="reports">
+        <h2>Pollution Reports by category</h2>
+        <p>Track pollution incidents across different environmental categories</p>
+
+        <div class="types-grid">
+            <div class="type">
+                <div class="redlogo"><i class="fa-solid fa-wind"></i><br>Air Pollution</div>
+                <h3 class="red">50</h3>
+                <p>reported this month</p>
+            </div>
+
+
+            <div class="type">
+                <div class="bluelogo"><i class="fas fa-tint blue"></i><br>Water Pollution</div>
+                    <h3 class="blue">20</h3>
+                    <p>reported this month</p>
+            </div>
+
+
+            <div class="type">
+                <div class="dgreenlogo"><i class="fa-solid fa-industry"></i><br>Land Pollution</div>
+                <h3 class="dark-green">31</h3>
+                <p>reported this month</p>
+            </div>
+
+
+            <div class="type">
+                <div class="lgreenlogo"><i class="fa-solid fa-tree"></i><br>Industrial Waste</div>
+                <h3 class="green">15</h3>
+                <p>reported this month</p>
+            </div>
+
+
+        </div>
+    </section>
+
+     <section class="features">
+        <div class="feature-title">
+            <h2>What Makes Us DIFFERENT</h2>
+            <div class="f_subtitle">Cutting Edge technology meets environmental activism for maximum impact</div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-user-shield"></i>
+                <h3>Anonymous Protection</h3>
+                <p>Report safely with <br>complete identity <br>protection and secure <br>data handling</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Multi-language Support</h3>
+                <p>Report in your native <br>language with real-time<br>translation and local<br>context</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Community Success Stories</h3>
+                <p>Join a network that has <br>helped resolve 500+ <br>pollution cases<br>worldwide</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+    <div class="footer-container">
+     
+      <div>
+        <h3>Ecofy</h3>
+        <p>
+          Empowering communities worldwide to report pollution, validate environmental threats, 
+          and coordinate effective cleanup actions for a sustainable future.
+        </p>
+        <div class="contact-info">
+           contact@ecofy.org <br>
+           011-21242124 <br>
+           Connaught Place,New Delhi
+        </div>
+      </div>
+
+     
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#">How It Works</a>
+        <a href="#">Impact Stories</a>
+        <a href="#">Report Incident</a>
+        <a href="#">API Documentation</a>
+        <a href="#">Partner with Us</a>
+      </div>
+
+      
+      <div>
+        <h3>Resources</h3>
+        <a href="#">Environmental Blog</a>
+        <a href="#">Research Papers</a>
+        <a href="#">Educational Webinars</a>
+        <a href="#">Support Center</a>
+        <a href="#">Community Forum</a>
+      </div>
+
+      
+      <div>
+        <h3>Stay Connected</h3>
+        <p>Get weekly updates on environmental actions and success stories.</p>
+        <div class="subscribe-box">
+          <input type="email" placeholder="Your email address">
+          <button>Subscribe</button>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-solid fa-phone"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="footer-bottom">
+      2025 Ecofy. All rights reserved. <br>
+      Built with  for our planet's future <br><br>
+      <a href="#">Privacy Policy</a> |
+      <a href="#">Terms of Service</a> |
+      <a href="#">Data Protection</a> |
+      <a href="#">Cookie Policy</a>
+    </div>
+  </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

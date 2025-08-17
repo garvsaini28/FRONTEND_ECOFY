@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Signup Page</title>
+    <link rel="stylesheet" href="ngo_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+
+<div class="container">
+    <h1>NGO Signup Page</h1>
+    <p class="subtitle">This page is for first-time NGO registration and verification.</p>
+
+    <form class="signup-form">
+
+        <label>NGO Name</label>
+        <div class="input-group">
+            <i class="fa-regular fa-building"></i>
+            <input type="text" placeholder="Enter your NGO name" required>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <label>NGO Registration Number</label>
+                <div class="input-group">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" placeholder="Registration number"required>
+                </div>
+            </div>
+            <div>
+                <label>Authorized Person's Full Name</label>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Full name of authorized person"required>
+                </div>
+            </div>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <label>Email Address</label>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="organization@example.com"required>
+                </div>
+            </div>
+            <div>
+                <label>Phone Number</label>
+                <div class="input-group">
+                    <i class="fas fa-phone-alt"></i>
+                    <input type="tel" placeholder="Contact phone number"required>
+                </div>
+            </div>
+        </div>
+
+        <label>Official Website (optional but helps with verification)</label>
+        <div class="input-group">
+            <i class="fas fa-globe"></i>
+            <input type="url" placeholder="https://your-ngo-website.org">
+        </div>
+
+        <label>Operational Area / Region (dropdown or text field)</label>
+        <div class="input-group">
+            <i class="fas fa-map-marker-alt"></i>
+            <select required>
+                <option>Select your operational area</option>
+                <option>North</option>
+                <option>South</option>
+                <option>East</option>
+                <option>West</option>
+            </select>
+        </div>
+
+        <label>Upload NGO Certificate / Proof of Registration (PDF/Image)</label>
+        <div class="input-group file-input">
+            <i class="fas fa-paperclip"></i>
+             <input type="file"required>
+        </div>
+
+        <div class="two-column">
+            <div>
+                <label>Password </label>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Create a strong password"required>
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+            </div>
+            <div>
+                <label>Confirm Password</label>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Confirm your password">
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="terms"required>
+            <label for="terms"> I Agree to Terms and Conditions & Privacy Policy</label>
+        </div>
+        
+        <button type="submit" class="submit-btn">Register NGO for verification</button>
+    </form>
+
+    <div class="login-page">
+        <p class="signup"> Already registered ? Back to <a href="/ECOFY/ngo_signin/ngo_signin.html">Login Page</a></p>
+    </div>
+</div>
+
+</body>
+</html>
